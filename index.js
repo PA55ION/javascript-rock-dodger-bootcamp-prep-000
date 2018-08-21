@@ -123,6 +123,9 @@ function endGame() {
     ROCKS.shift();
   }
   clearInterval(gameInterval);
+  window.removeEventListener('moveDodger');
+  alert('You LOSE!');
+  START.innerHTML = "Try Again?"
 
 }
 
