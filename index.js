@@ -126,6 +126,7 @@ function endGame() {
   window.removeEventListener('keydown', moveDodger);
   alert('YOU LOSE!');
   START.innerHTML = "Try Again?"
+  START.style.display = 'inline';
 
 }
 
