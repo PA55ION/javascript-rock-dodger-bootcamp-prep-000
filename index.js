@@ -108,7 +108,7 @@ function createRock(x) {
   ROCKS.push(rock)
 
   // Finally, return the rock element you've created
-  return rock
+  return rock;
 }
 
 /**
@@ -119,7 +119,7 @@ function createRock(x) {
  */
 function endGame() {
   for(let i = 0; i < ROCKS.length; i++) {
-    GAME.removeChild(rocks);
+    GAME.removeChild(ROCKS[1]);
     ROCKS.shift();
   }
   clearInterval(gameInterval);
