@@ -119,7 +119,7 @@ function createRock(x) {
  */
 function endGame() {
   for(let i = 0; i < ROCKS.length[i]; i++) {
-    GAME.removeChild(ROCKS[1]);
+    GAME.removeChild(ROCKS[i]);
     ROCKS.shift();
   }
   clearInterval(gameInterval);
