@@ -123,7 +123,7 @@ function endGame() {
     ROCKS.shift();
   }
   clearInterval(gameInterval);
-  window.removeEventListener('moveDodger');
+  window.removeEventListener('keydown', moveDodger);
   alert('You LOSE!');
   START.innerHTML = "Try Again?"
 
