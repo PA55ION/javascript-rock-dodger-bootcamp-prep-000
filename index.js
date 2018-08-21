@@ -150,7 +150,7 @@ function moveDodgerLeft() {
    */
    const left = positionToInteger(dodger.style.left);
    if(left > 0) {
-     dodger.style.left = `${left + 4}px`
+     dodger.style.left = `${left - 4}px`
      window.requestAnimationFrame(moveDodgerLeft);
    }
 }
